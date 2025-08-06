@@ -2,6 +2,7 @@
   "name": "y",
   "type": "module",
   "version": "0.0.1",
+  "homepage": "https://Liacar1.github.io/Retablos",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

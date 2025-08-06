@@ -1,46 +1,41 @@
-# Astro Starter Kit: Basics
+# Taller de Retablos - Lía Carvajal
 
-```sh
-npm create astro@latest -- --template basics
+Sitio web para el taller de retablos artesanales de Lía Carvajal, especializado en arte colonial en miniatura.
+
+## 🎨 Características
+
+- Diseño responsive y moderno
+- Galería de productos con modal interactivo
+- Información de contacto y WhatsApp
+- Páginas de inscripciones y productos
+
+## 🚀 Tecnologías
+
+- **Astro** - Framework web
+- **Tailwind CSS** - Estilos
+- **Alpine.js** - Interactividad
+
+## 📦 Instalación
+
+```bash
+# Instalar dependencias
+npm install
+
+# Desarrollo local
+npm run dev
+
+# Build para producción
+npm run build
+
+# Preview del build
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🌐 Despliegue
 
-## 🚀 Project Structure
+Este sitio está configurado para desplegarse automáticamente en GitHub Pages.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📞 Contacto
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **WhatsApp**: 79582281
+- **Ubicación**: Alto Obrajes, Parroquia Divino Maestro
