@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lia Carvajal - Taller de Retablos</title>
+    <link rel="stylesheet" href="/dist/style.css" /> <!-- o tu CSS -->
+  </head>
+  <body class="bg-gray-50">
+    <header>
+      <!-- Aquí va tu menú / header -->
+      <nav>
+        <a href="/">Inicio</a> | 
+        <a href="/taller">Taller 2024</a> | 
+        <a href="/#llaveros">Llaveros</a> | 
+        <a href="/#casitas">Casitas</a> | 
+        <a href="/#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main >
+      <slot />  <!-- Aquí va el contenido de cada página -->
+    </main>
+
+    <footer>
+      <p>© {new Date().getFullYear()} Lia Carvajal</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,119 @@
+---
+import Layout from '../layouts/Layout.astro';
+const year = new Date().getFullYear();
+---
+
+<Layout>
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 py-8 w-full bg-transparent min-h-screen">
+
+    <!-- Sección CADIMA -->
+    <section class="bg-gradient-to-br from-orange-100/80 via-amber-100/80 to-yellow-100/80 py-12 px-8 rounded-3xl shadow-xl my-8 border-2 border-orange-300/50 backdrop-blur-sm">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold text-orange-700 mb-4 flex items-center justify-center gap-3">
+          <img 
+        src="/cadimalogo.PNG" 
+        alt="Logo CADIMA Centro Artesanal Divino Maestro" 
+        class="w-32 h-16 object-contain drop-shadow-lg"
+      />
+          
+          CADIMA
+          <span class="bg-orange-500 text-white p-3 rounded-full">🚪🏠</span>
+        </h2>
+        <p class="text-xl italic font-semibold text-orange-800 mb-2">*Centro Artesanal Divino Maestro*</p>
+        <p class="text-2xl text-slate-700 italic font-medium">ARTE MANUAL Y DECORATIVO</p>
+        <p class="text-2xl font-bold text-orange-700 mb-6">✨ Arte Colonial en Miniatura</p>
+        <p class="text-lg text-slate-700">Llaveros y casitas decorativas hechos a mano por la profesora Lía Carvajal.</p>
+        
+      </div>
+    </section>
+
+    <!-- Llaveros -->
+    <section id="llaveros" class="max-w-6xl mx-auto my-12">
+      <h3 class="text-4xl font-bold text-slate-800 mb-8 text-center bg-gradient-to-r from-orange-100/80 to-amber-100/80 py-6 px-8 rounded-3xl shadow-lg border-2 border-orange-200/50 backdrop-blur-sm">
+        <span class="bg-orange-500 text-white p-3 rounded-full mr-4">🏠🏠</span>
+        Llaveros Artesanales
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-4 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl1.jpeg" alt="Llavero 1" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-lg text-slate-800">Llavero Colonial 1</h4>
+          </div>
+        </div>
+        <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-4 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl3.jpeg" alt="Llavero 2" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-lg text-slate-800">Llavero Colonial 2</h4>
+          </div>
+        </div>
+        <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-4 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl11.jpeg" alt="Llavero 3" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-lg text-slate-800">Llavero Colonial 3</h4>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a href="/productos" class="inline-block bg-gradient-to-r from-orange-500 to-amber-500 text-white px-8 py-4 rounded-2xl font-semibold hover:from-orange-600 hover:to-amber-600 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          Ver más llaveros
+        </a>
+      </div>
+    </section>
+
+    <!-- Casitas -->
+    <section id="casitas" class="max-w-6xl mx-auto my-12">
+      <h3 class="text-4xl font-bold text-slate-800 mb-8 text-center bg-gradient-to-r from-amber-100/80 to-yellow-100/80 py-6 px-8 rounded-3xl shadow-lg border-2 border-amber-200/50 backdrop-blur-sm">
+        <span class="bg-amber-500 text-white p-3 rounded-full mr-4">🚪🚪</span>
+        Casitas Rústicas
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-4 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl5.jpeg" alt="Casita 1" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-lg text-slate-800">Casita Colonial 1</h4>
+          </div>
+        </div>
+        <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-4 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl6.jpeg" alt="Casita 2" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-lg text-slate-800">Casita Colonial 2</h4>
+          </div>
+        </div>
+        <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-4 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl10.jpeg" alt="Casita 3" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-lg text-slate-800">Casita Colonial 3</h4>
+          </div>
+        </div>
+      </div>
+      <div class="mt-8 text-center">
+        <a href="/productos" class="inline-block bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-8 py-4 rounded-2xl font-semibold hover:from-amber-600 hover:to-yellow-600 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          Ver más casitas
+        </a>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="bg-gradient-to-br from-orange-600/90 via-amber-600/90 to-yellow-600/90 py-12 px-8 rounded-3xl shadow-2xl my-8 text-center border-2 border-orange-400/50 backdrop-blur-sm">
+      <div class="max-w-3xl mx-auto">
+        <h3 class="text-3xl font-bold mb-6 text-white drop-shadow-lg flex items-center justify-center gap-3">
+          <span class="bg-orange-500 text-white p-3 rounded-full">📞</span>
+          Contacto
+        </h3>
+        <div class="bg-gradient-to-r from-orange-500/90 to-amber-500/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm mb-6">
+          <p class="text-xl text-orange-100 mb-2">📍 Ubicación</p>
+          <p class="text-white text-lg">Alto Obrajes, Parroquia Divino Maestro</p>
+        </div>
+        <a
+          href="https://wa.me/59179582281?text=hola,%20mas%20informacion%20porfavor%20sobre%20el%20curso%20de%20retablos"
+          target="_blank"
+          class="inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3 mx-auto"
+        >
+          <span class="text-2xl">📱</span>
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+    </section>
+
+  </main>
+</Layout>

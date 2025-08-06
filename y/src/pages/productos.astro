@@ -1,0 +1,461 @@
+---
+import Layout from '../layouts/Layout.astro';
+const year = new Date().getFullYear();
+---
+
+<Layout>
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 py-8 w-full bg-transparent min-h-screen">
+    
+    <!-- Header con título principal -->
+    <section class="relative max-w-8xl mx-auto px-4 py-6 mb-8">
+      <!-- Logo en la esquina superior derecha -->
+      <div class="absolute top-0 right-0 z-10">
+        <img 
+          src="/cadimalogo.PNG" 
+          alt="Logo CADIMA Centro Artesanal Divino Maestro" 
+          class="w-32 h-16 object-contain drop-shadow-lg"
+        />
+      </div>
+      
+      <!-- Título centrado con fondo sólido -->
+      <div class="text-center pt-8 bg-gradient-to-r from-white/95 to-orange-50/95 py-8 px-6 rounded-3xl shadow-xl border border-orange-200/50 backdrop-blur-sm">
+        <h1 class="text-6xl font-bold bg-gradient-to-r from-orange-600 via-amber-500 to-yellow-600 bg-clip-text text-transparent mb-2">Retablos Artesanales</h1>
+        <p class="text-2xl text-slate-700 italic font-medium">Arte Colonial en Miniatura</p>
+      </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section class="max-w-6xl mx-auto my-12">
+      <h3 class="text-4xl font-bold text-slate-800 mb-8 text-center bg-gradient-to-r from-amber-100/80 to-yellow-100/80 py-6 px-8 rounded-3xl shadow-lg border-2 border-amber-200/50 backdrop-blur-sm">
+        <span class="bg-amber-500 text-white p-3 rounded-full mr-4">🏠</span>
+        Nuestros Retablos
+      </h3>
+      
+      <!-- Grid de casitas -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        
+        <!-- Casita Colonial 1 -->
+        <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl1.jpeg" alt="Casita Colonial 1" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Colonial 1</h4>
+            <p class="text-slate-600 mb-3">Retablo colonial tradicional con detalles artesanales</p>
+
+            <button onclick="verProducto('Retablo Colonial 1', 'colonial1')" class="bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-amber-600 hover:to-yellow-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Colonial 2 -->
+        <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl2.jpeg" alt="Casita Colonial 2" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Colonial 2</h4>
+            <p class="text-slate-600 mb-3">Retablo rústico con balcón y jardín</p>
+
+            <button onclick="verProducto('Retablo Colonial 2', 'colonial2')" class="bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-amber-600 hover:to-yellow-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Colonial 3 -->
+        <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl5.jpeg" alt="Casita Colonial 3" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Colonial 3</h4>
+            <p class="text-slate-600 mb-3">Retablo de campo con techo de tejas</p>
+
+            <button onclick="verProducto('Retablo Colonial 3', 'colonial3')" class="bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-amber-600 hover:to-yellow-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Rústica 1 -->
+        <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl6.jpeg" alt="Casita Rústica 1" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Rústico 1</h4>
+            <p class="text-slate-600 mb-3">Retablo de madera con chimenea</p>
+
+            <button onclick="verProducto('Retablo Rústico 1', 'rustica1')" class="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-amber-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Rústica 2 -->
+        <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl7.jpeg" alt="Casita Rústica 2" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Rústico 2</h4>
+            <p class="text-slate-600 mb-3">Retablo de piedra con patio interior</p>
+
+            <button onclick="verProducto('Retablo Rústico 2', 'rustica2')" class="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-amber-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Rústica 3 -->
+        <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl10.jpeg" alt="Casita Rústica 3" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Rústico 3</h4>
+            <p class="text-slate-600 mb-3">Retablo de campo con porche</p>
+
+            <button onclick="verProducto('Retablo Rústico 3', 'rustica3')" class="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-amber-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Colonial 4 -->
+        <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retabl11.jpeg" alt="Casita Colonial 4" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Colonial 4</h4>
+            <p class="text-slate-600 mb-3">Casa señorial con balcones</p>
+
+            <button onclick="verProducto('Casita Colonial 4', 'colonial4')" class="bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-amber-600 hover:to-yellow-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Colonial 5 -->
+        <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retablo1.jpeg" alt="Casita Colonial 5" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Colonial 5</h4>
+            <p class="text-slate-600 mb-3">Casa de adobe con patio</p>
+
+            <button onclick="verProducto('Casita Colonial 5', 'colonial5')" class="bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-amber-600 hover:to-yellow-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Colonial 6 -->
+        <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retablo2.jpeg" alt="Casita Colonial 6" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Colonial 6</h4>
+            <p class="text-slate-600 mb-3">Casa con galería y jardín</p>
+
+            <button onclick="verProducto('Casita Colonial 6', 'colonial6')" class="bg-gradient-to-r from-amber-500 to-yellow-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-amber-600 hover:to-yellow-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Rústica 4 -->
+        <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retablo3.jpeg" alt="Casita Rústica 4" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Rústica 4</h4>
+            <p class="text-slate-600 mb-3">Cabaña de troncos con terraza</p>
+
+            <button onclick="verProducto('Casita Rústica 4', 'rustica4')" class="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-amber-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Rústica 5 -->
+        <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retablo4.jpeg" alt="Casita Rústica 5" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Rústica 5</h4>
+            <p class="text-slate-600 mb-3">Casa de campo con mirador</p>
+
+            <button onclick="verProducto('Casita Rústica 5', 'rustica5')" class="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-amber-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+        <!-- Casita Rústica 6 -->
+        <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
+          <img src="/retablo5.jpeg" alt="Casita Rústica 6" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <div class="text-center">
+            <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Rústica 6</h4>
+            <p class="text-slate-600 mb-3">Casa de piedra con torre</p>
+
+            <button onclick="verProducto('Casita Rústica 6', 'rustica6')" class="bg-gradient-to-r from-orange-500 to-amber-500 text-white px-6 py-3 rounded-xl font-semibold hover:from-orange-600 hover:to-amber-600 hover:shadow-lg transition-all duration-300">
+              Ver Producto
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sección de contacto más pequeña -->
+    <section class="bg-gradient-to-br from-orange-600/90 via-amber-600/90 to-yellow-600/90 py-8 px-6 rounded-3xl shadow-2xl my-8 text-center border-2 border-orange-400/50 backdrop-blur-sm">
+      <div class="max-w-2xl mx-auto">
+        
+       
+        <a
+          href="https://wa.me/59179582281?text=hola,%20me%20interesa%20una%20casita"
+          target="_blank"
+          class="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl text-base font-semibold hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-2 mx-auto"
+        >
+          <span class="text-xl">📱</span>
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Modal detallado para productos -->
+    <div id="productoModal" class="fixed inset-0 bg-black/90 hidden z-50 flex items-start justify-center p-4 backdrop-blur-sm">
+      <div class="relative max-w-4xl my-8 max-h-[90vh] overflow-y-auto bg-white/10 backdrop-blur-md rounded-3xl p-8">
+        <button onclick="cerrarProducto()" class="absolute top-4 right-4 text-white text-5xl font-bold hover:text-gray-300 transition-colors z-10 bg-black/50 rounded-full w-12 h-12 flex items-center justify-center">
+          ×
+        </button>
+        <div class="pt-8">
+          <h3 id="productoTitulo" class="text-white text-4xl font-bold mb-6 text-center drop-shadow-lg"></h3>
+          
+          <!-- Galería de fotos -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+            <img id="foto1" src="" alt="" class="w-full h-64 object-cover rounded-2xl shadow-lg" />
+            <img id="foto2" src="" alt="" class="w-full h-64 object-cover rounded-2xl shadow-lg" />
+          </div>
+          
+          <!-- Descripción detallada -->
+          <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6 mb-6">
+            <h4 class="text-white text-2xl font-bold mb-4">Descripción Detallada</h4>
+            <p id="productoDescripcion" class="text-white text-lg leading-relaxed mb-4"></p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-white">
+              <div class="text-center">
+                <p class="font-bold">Materiales</p>
+                <p id="productoMateriales" class="text-sm"></p>
+              </div>
+              <div class="text-center">
+                <p class="font-bold">Tamaño</p>
+                <p id="productoTamaño" class="text-sm"></p>
+              </div>
+              <div class="text-center">
+                <p class="font-bold">Tiempo de Entrega</p>
+                <p id="productoEntrega" class="text-sm"></p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Precio y botón -->
+          <div class="text-center">
+            <p id="productoPrecio" class="text-yellow-300 text-3xl font-bold mb-6"></p>
+            <a
+              id="productoWhatsApp"
+              href="#"
+              target="_blank"
+              class="inline-block bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-2xl text-xl font-semibold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center justify-center gap-3 mx-auto"
+            >
+              <span class="text-2xl">📱</span>
+              Ver Producto en WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Datos de productos
+      const productos = {
+        colonial1: {
+          titulo: 'Retablo Colonial 1',
+          descripcion: 'Esta hermosa casita colonial representa la arquitectura tradicional de Bolivia. Cada detalle ha sido cuidadosamente elaborado a mano, desde los balcones de madera hasta las tejas del techo. La casa incluye ventanas con marcos detallados, una puerta principal ornamentada y un pequeño jardín frontal. Perfecta para decorar cualquier espacio o como regalo especial.',
+          materiales: 'Madera de pino, yeso, pintura acrílica',
+          tamaño: '15cm x 12cm x 8cm',
+          entrega: '3-5 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retabl1.jpeg', '/retabl4.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        colonial2: {
+          titulo: 'Retablo Colonial 2',
+          descripcion: 'Una elegante casa colonial con balcón y jardín que captura la esencia de la arquitectura tradicional. Esta pieza única incluye detalles como balcones de hierro forjado, ventanas con persianas y un jardín con flores pintadas a mano. La combinación de colores tierra y detalles dorados la hace perfecta para cualquier decoración.',
+          materiales: 'Madera de cedro, metal, pintura acrílica',
+          tamaño: '18cm x 14cm x 10cm',
+          entrega: '3-5 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retabl2.jpeg', '/retabl3.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        colonial3: {
+          titulo: 'Retablo Colonial 3',
+          descripcion: 'Esta casa de campo con techo de tejas es una obra maestra de la artesanía. Cada teja ha sido colocada individualmente, creando un efecto realista. La casa incluye una chimenea funcional, ventanas con cortinas y un porche frontal. Los colores cálidos y la textura natural la hacen ideal para espacios rústicos.',
+          materiales: 'Madera de roble, tejas de arcilla, pintura acrílica',
+          tamaño: '20cm x 16cm x 12cm',
+          entrega: '5-7 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retabl5.jpeg', '/retabl.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        rustica1: {
+          titulo: 'Retablo Rústico 1',
+          descripcion: 'Una encantadora cabaña de madera con chimenea que evoca la calidez del campo. Esta pieza única incluye troncos de madera natural, una chimenea con humo pintado y un techo de paja. Los detalles como las ventanas con marcos rústicos y la puerta de madera la hacen perfecta para decoraciones campestres.',
+          materiales: 'Troncos de madera natural, paja, pintura acrílica',
+          tamaño: '16cm x 13cm x 9cm',
+          entrega: '4-6 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retabl6.jpeg', '/retabl.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        rustica2: {
+          titulo: 'Retablo Rústico 2',
+          descripcion: 'Esta casa de piedra con patio interior es una muestra de la arquitectura tradicional. Construida con piedras naturales y adobe, incluye un patio interior con fuente, arcos de piedra y balcones de hierro. Los colores tierra y la textura natural la hacen ideal para espacios mediterráneos.',
+          materiales: 'Piedra natural, adobe, hierro forjado',
+          tamaño: '22cm x 18cm x 14cm',
+          entrega: '6-8 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retabl8.jpeg', '/retabl9.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        rustica3: {
+          titulo: 'Retablo Rústico 3',
+          descripcion: 'Una hermosa casa de campo con porche que combina elegancia y rusticidad. Esta pieza incluye un porche frontal con columnas de madera, ventanas con persianas y un jardín lateral. Los detalles como las escaleras de piedra y el techo de tejas la hacen perfecta para cualquier decoración.',
+          materiales: 'Madera de pino, piedra, tejas de arcilla',
+          tamaño: '19cm x 15cm x 11cm',
+          entrega: '4-6 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retabl10.jpeg', '/retabl.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        colonial4: {
+          titulo: 'Retablo Colonial 4',
+          descripcion: 'Una majestuosa casa señorial con balcones que representa la opulencia colonial. Esta pieza incluye balcones de hierro forjado, ventanas con marcos dorados y una fachada ornamentada. Los detalles como las columnas corintias y los arcos la hacen perfecta para decoraciones elegantes.',
+          materiales: 'Madera de caoba, hierro forjado, pintura dorada',
+          tamaño: '25cm x 20cm x 15cm',
+          entrega: '7-10 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retabl11.jpeg', '/retabl12.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        colonial5: {
+          titulo: 'Retablo Colonial 5',
+          descripcion: 'Una auténtica casa de adobe con patio que refleja la arquitectura tradicional boliviana. Esta pieza incluye muros de adobe, un patio interior con fuente y balcones de madera. Los colores tierra y la textura natural la hacen ideal para espacios con estilo colonial.',
+          materiales: 'Adobe, madera de pino, pintura natural',
+          tamaño: '17cm x 14cm x 10cm',
+          entrega: '3-5 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retablo1.jpeg', '/retablo.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        colonial6: {
+          titulo: 'Retablo Colonial 6',
+          descripcion: 'Una elegante casa con galería y jardín que combina arquitectura colonial y naturaleza. Esta pieza incluye una galería frontal con columnas, ventanas con marcos detallados y un jardín con flores pintadas. Los colores suaves y los detalles florales la hacen perfecta para espacios románticos.',
+          materiales: 'Madera de cedro, yeso, pintura acrílica',
+          tamaño: '21cm x 17cm x 13cm',
+          entrega: '5-7 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retablo2.jpeg', '/retablo.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        rustica4: {
+          titulo: 'Retablo Rústico 4',
+          descripcion: 'Una impresionante cabaña de troncos con terraza que evoca la vida en la montaña. Esta pieza incluye troncos de madera natural, una terraza frontal con barandilla y ventanas con marcos rústicos. Los detalles como la chimenea y el techo de paja la hacen perfecta para decoraciones alpinas.',
+          materiales: 'Troncos de pino, paja, metal',
+          tamaño: '24cm x 19cm x 15cm',
+          entrega: '6-8 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retablo3.jpeg', '/retablo.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        rustica5: {
+          titulo: 'Retablo Rústico 5',
+          descripcion: 'Una hermosa casa de campo con mirador que ofrece vistas panorámicas. Esta pieza incluye un mirador con ventanas panorámicas, balcones de hierro forjado y un jardín lateral. Los detalles como las escaleras de piedra y el techo de tejas la hacen perfecta para espacios con vista.',
+          materiales: 'Madera de roble, piedra, hierro forjado',
+          tamaño: '26cm x 21cm x 16cm',
+          entrega: '7-10 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retablo4.jpeg', '/retablo.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        },
+        rustica6: {
+          titulo: 'Retablo Rústico 6',
+          descripcion: 'Una majestuosa casa de piedra con torre que combina fortaleza y elegancia. Esta pieza incluye una torre con almenas, ventanas con marcos de piedra y un patio interior. Los detalles como las escaleras de caracol y los arcos góticos la hacen perfecta para decoraciones medievales.',
+          materiales: 'Piedra natural, hierro forjado, madera de roble',
+          tamaño: '28cm x 23cm x 18cm',
+          entrega: '8-12 días hábiles',
+          precio: 'Consulte nuestros precios por medio del número telefónico',
+          fotos: ['/retablo5.jpeg', '/retabl.jpeg'],
+          whatsapp: 'https://wa.me/59179582281?text=Hola%20me%20gustaria%20el%20precio%20y%20mas%20informacion%20de%20Retablo%20Colonial%205'
+        }
+      };
+
+             // Hacer las funciones globales
+       (window as any).verProducto = function(nombre: string, id: string) {
+         const producto = productos[id as keyof typeof productos];
+         if (!producto) return;
+
+         const modal = document.getElementById('productoModal') as HTMLElement;
+         const titulo = document.getElementById('productoTitulo') as HTMLElement;
+         const descripcion = document.getElementById('productoDescripcion') as HTMLElement;
+         const materiales = document.getElementById('productoMateriales') as HTMLElement;
+         const tamaño = document.getElementById('productoTamaño') as HTMLElement;
+         const entrega = document.getElementById('productoEntrega') as HTMLElement;
+         const precio = document.getElementById('productoPrecio') as HTMLElement;
+         const whatsapp = document.getElementById('productoWhatsApp') as HTMLAnchorElement;
+         const foto1 = document.getElementById('foto1') as HTMLImageElement;
+         const foto2 = document.getElementById('foto2') as HTMLImageElement;
+         
+         if (modal && titulo && descripcion && materiales && tamaño && entrega && precio && whatsapp && foto1 && foto2) {
+           titulo.textContent = producto.titulo;
+           descripcion.textContent = producto.descripcion;
+           materiales.textContent = producto.materiales;
+           tamaño.textContent = producto.tamaño;
+           entrega.textContent = producto.entrega;
+           precio.textContent = producto.precio;
+           whatsapp.href = producto.whatsapp;
+           foto1.src = producto.fotos[0];
+           
+           // Mostrar segunda foto
+           foto2.src = producto.fotos[1];
+           foto2.style.display = 'block';
+           
+           // Guardar la posición actual del scroll
+           const scrollY = window.scrollY;
+           
+           modal.classList.remove('hidden');
+           document.body.style.overflow = 'hidden';
+           
+           // Posicionar el modal en la posición actual del scroll
+           modal.style.top = scrollY + 'px';
+         }
+       };
+
+             (window as any).cerrarProducto = function() {
+         const modal = document.getElementById('productoModal') as HTMLElement;
+         if (modal) {
+           modal.classList.add('hidden');
+           document.body.style.overflow = 'auto';
+           // Restaurar la posición del modal
+           modal.style.top = '';
+         }
+       };
+
+      // Cerrar modal al hacer clic fuera
+      document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('productoModal');
+        if (modal) {
+          modal.addEventListener('click', function(e) {
+            if (e.target === this) {
+              (window as any).cerrarProducto();
+            }
+          });
+        }
+      });
+
+      // Cerrar modal con Escape
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          (window as any).cerrarProducto();
+        }
+      });
+    </script>
+
+  </main>
+</Layout>

@@ -1,0 +1,213 @@
+---
+import Layout from '../layouts/Layout.astro';
+const year = new Date().getFullYear();
+---
+
+<Layout>
+  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 py-8 w-full bg-transparent min-h-screen">
+    <!-- Header con logo estratégicamente posicionado -->
+    <section class="relative max-w-8xl mx-auto px-4 py-6 mb-8">
+      <!-- Logo en la esquina superior derecha -->
+      <div class="absolute top-0 right-0 z-10">
+        <img 
+            src="/cadimalogo.PNG" 
+            alt="Logo CADIMA Centro Artesanal Divino Maestro" 
+          class="w-32 h-16 object-contain drop-shadow-lg"
+        />
+      </div>
+      
+      <!-- Título centrado con fondo sólido -->
+      <div class="text-center pt-8 bg-gradient-to-r from-white/95 to-orange-50/95 py-8 px-6 rounded-3xl shadow-xl border border-orange-200/50 backdrop-blur-sm">
+        <h1 class="text-6xl font-bold bg-gradient-to-r from-orange-600 via-amber-500 to-yellow-600 bg-clip-text text-transparent mb-2">Lía Carvajal</h1>
+        <p class="text-2xl text-slate-700 italic font-medium">ARTE MANUAL Y DECORATIVO</p>
+      </div>
+        </section>
+
+    <!-- Información del taller con nuevo diseño -->
+    <section class="bg-gradient-to-br from-orange-400/90 via-amber-500/90 to-yellow-500/90 py-16 px-8 text-center rounded-3xl shadow-2xl my-8 transform hover:scale-105 transition-transform duration-300 border-4 border-orange-300/50 backdrop-blur-sm">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-lg"> Taller de Retablos</h1>
+      <p class="text-xl md:text-2xl font-medium text-orange-100">¡Desarrolla tu creatividad en este hermoso taller!</p>
+</section>
+
+    <!-- Nuevo diseño para fechas y horarios -->
+    <section class="bg-gradient-to-br from-orange-100/80 via-amber-100/80 to-yellow-100/80 py-12 px-8 rounded-3xl shadow-xl my-8 border-2 border-orange-300/50 backdrop-blur-sm">
+  <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-slate-800 flex items-center justify-center gap-3">
+          <span class="bg-orange-500 text-white p-3 rounded-full"></span>
+          Fechas y horarios
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gradient-to-r from-orange-50/90 to-amber-50/90 p-6 rounded-2xl shadow-lg border border-orange-200/50 backdrop-blur-sm">
+            <h3 class="text-lg font-bold text-orange-800 mb-4">📅 Horarios</h3>
+            <ul class="space-y-3 text-slate-700">
+              <li class="flex items-center gap-3 p-3 bg-white/80 rounded-lg">🧒 <span class="font-semibold">Inicial:</span> <strong class="text-orange-600">Jueves</strong></li>
+              <li class="flex items-center gap-3 p-3 bg-white/80 rounded-lg">🧑‍🎨 <span class="font-semibold">Avanzado:</span> <strong class="text-orange-600">Viernes</strong></li>
+              <li class="flex items-center gap-3 p-3 bg-white/80 rounded-lg">🕒 <span class="font-semibold">Horario:</span> <strong class="text-orange-600">15:00 a 18:00</strong></li>
+            </ul>
+          </div>
+          <div class="bg-gradient-to-r from-amber-50/90 to-yellow-50/90 p-6 rounded-2xl shadow-lg border border-amber-200/50 backdrop-blur-sm">
+            <h3 class="text-lg font-bold text-amber-800 mb-4">📋 Detalles</h3>
+            <ul class="space-y-3 text-slate-700">
+              <li class="flex items-center gap-3 p-3 bg-white/80 rounded-lg">📆 <span class="font-semibold">Duración:</span> <strong class="text-amber-600">12 semanas</strong></li>
+              <li class="flex items-center gap-3 p-3 bg-white/80 rounded-lg">📅 <span class="font-semibold">Inicio:</span> <strong class="text-amber-600">Mayo/Junio</strong></li>
+              <li class="flex items-center gap-3 p-3 bg-amber-100/80 rounded-lg">💰 <span class="font-semibold">Aporte:</span> <strong class="text-amber-700 text-xl">180 Bs.</strong></li>
+    </ul>
+          </div>
+        </div>
+  </div>
+</section>
+
+    <!-- Nuevo diseño para qué aprenderás -->
+    <section class="bg-gradient-to-br from-yellow-100/80 via-orange-100/80 to-amber-100/80 py-12 px-8 rounded-3xl shadow-xl my-8 border-2 border-yellow-300/50 backdrop-blur-sm">
+  <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-8 text-slate-800 flex items-center justify-center gap-3">
+          <span class="bg-yellow-500 text-white p-3 rounded-full"></span>
+          ¿Qué aprenderás?
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-gradient-to-br from-yellow-50/90 to-orange-50/90 p-6 rounded-2xl shadow-lg border border-yellow-200/50 text-center hover:transform hover:scale-105 transition-transform backdrop-blur-sm">
+            <div class="text-4xl mb-4">🏠</div>
+            <h3 class="text-lg font-bold text-yellow-800 mb-2">Diseño</h3>
+            <p class="text-slate-700">Elaborar el modelo del proyecto</p>
+          </div>
+          <div class="bg-gradient-to-br from-yellow-50/90 to-orange-50/90 p-6 rounded-2xl shadow-lg border border-yellow-200/50 text-center hover:transform hover:scale-105 transition-transform backdrop-blur-sm">
+            <div class="text-4xl mb-4">🔨</div>
+            <h3 class="text-lg font-bold text-yellow-800 mb-2">Construcción</h3>
+            <p class="text-slate-700">Armado con materiales necesarios</p>
+          </div>
+          <div class="bg-gradient-to-br from-yellow-50/90 to-orange-50/90 p-6 rounded-2xl shadow-lg border border-yellow-200/50 text-center hover:transform hover:scale-105 transition-transform backdrop-blur-sm">
+            <div class="text-4xl mb-4">🎨</div>
+            <h3 class="text-lg font-bold text-yellow-800 mb-2">Técnicas</h3>
+            <p class="text-slate-700">Diferentes técnicas por proyecto</p>
+          </div>
+        </div>
+  </div>
+</section>
+
+    <!-- Ejemplos de retablos con nuevo diseño -->
+    <section class="max-w-6xl mx-auto my-12">
+      <h3 class="text-4xl font-bold text-slate-800 mb-8 text-center bg-gradient-to-r from-orange-100/80 to-amber-100/80 py-6 px-8 rounded-3xl shadow-lg border-2 border-orange-200/50 backdrop-blur-sm">
+        <span class="bg-orange-500 text-white p-3 rounded-full mr-4">🎨</span>
+        Ejemplos de Retablos
+      </h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="group cursor-pointer bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-4 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm" onclick="openModal('/retablo1.jpeg', 'Retablo 1')">
+          <img src="/retablo1.jpeg" alt="Retablo 1" class="rounded-2xl shadow-lg object-cover w-full h-64 transform group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="group cursor-pointer bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-4 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm" onclick="openModal('/retablo2.jpeg', 'Retablo 2')">
+          <img src="/retablo2.jpeg" alt="Retablo 2" class="rounded-2xl shadow-lg object-cover w-full h-64 transform group-hover:scale-105 transition-transform duration-300" />
+        </div>
+        <div class="group cursor-pointer bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-4 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm" onclick="openModal('/retablo3.jpeg', 'Retablo 3')">
+          <img src="/retablo3.jpeg" alt="Retablo 3" class="rounded-2xl shadow-lg object-cover w-full h-64 transform group-hover:scale-105 transition-transform duration-300" />
+        </div>
+  </div>
+</section>
+
+    <!-- Contacto con botones de WhatsApp -->
+    <section class="bg-gradient-to-br from-orange-600/90 via-amber-600/90 to-yellow-600/90 py-12 px-8 rounded-3xl shadow-2xl my-8 text-center border-2 border-orange-400/50 backdrop-blur-sm">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl font-bold mb-6 text-white drop-shadow-lg flex items-center justify-center gap-3">
+          <span class="bg-orange-500 text-white p-3 rounded-full">📞</span>
+          Contacto
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div class="bg-gradient-to-r from-orange-500/90 to-amber-500/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+            <p class="text-xl text-orange-100 mb-2">📍 Ubicación</p>
+            <p class="text-white text-lg">Parroquia Divino Maestro, Alto Obrajes - La Paz, Bolivia</p>
+          </div>
+          <div class="bg-gradient-to-r from-amber-500/90 to-yellow-500/90 p-6 rounded-2xl shadow-lg backdrop-blur-sm">
+            <p class="text-xl text-amber-100 mb-2">📱 WhatsApp</p>
+            <p class="text-white text-2xl font-bold">79582281, 78817081</p>
+          </div>
+        </div>
+        
+        <!-- Botones de WhatsApp -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/59179582281" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
+            <span class="text-2xl"></span>
+            <span>WhatsApp: 79582281</span>
+          </a>
+          <a href="https://wa.me/59178817081" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-8 rounded-2xl shadow-lg transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-3">
+            <span class="text-2xl"></span>
+            <span>WhatsApp: 78817081</span>
+          </a>
+        </div>
+  </div>
+</section>
+
+    <!-- Materiales con nuevo diseño -->
+    <section class="bg-gradient-to-br from-yellow-100/80 via-orange-100/80 to-amber-100/80 py-12 px-8 rounded-3xl shadow-xl my-8 border-2 border-yellow-300/50 backdrop-blur-sm">
+      <div class="max-w-3xl mx-auto text-center">
+        <div class="bg-gradient-to-r from-yellow-500/90 to-orange-600/90 text-white py-6 px-8 rounded-2xl shadow-lg mb-6 border-2 border-yellow-400/50 backdrop-blur-sm">
+          <h2 class="text-2xl font-bold flex items-center justify-center gap-3">
+            <span class="bg-yellow-400 text-yellow-800 p-2 rounded-full">🛍️</span>
+            Materiales
+          </h2>
+        </div>
+        <div class="bg-gradient-to-r from-yellow-50/90 to-orange-50/90 p-8 rounded-2xl shadow-lg border border-yellow-200/50 backdrop-blur-sm">
+          <p class="text-slate-700 text-lg font-medium leading-relaxed">
+            Para que puedas personalizar tu experiencia y trabajar con materiales de tu preferencia, 
+            cada participante adquiere sus propios materiales. ¡Esto te permite elegir los colores 
+            y texturas que más te gusten para crear tu obra única!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal mejorado para ver imágenes completas -->
+    <div id="imageModal" class="fixed inset-0 bg-black/90 hidden z-50 flex items-center justify-center p-4 backdrop-blur-sm">
+      <div class="relative max-w-6xl max-h-full">
+        <button onclick="closeModal()" class="absolute top-4 right-4 text-white text-5xl font-bold hover:text-gray-300 transition-colors z-10 bg-black/50 rounded-full w-12 h-12 flex items-center justify-center">
+          ×
+        </button>
+        <div class="bg-white/10 backdrop-blur-md rounded-3xl p-6">
+          <img id="modalImage" src="" alt="" class="max-w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl" />
+          <h3 id="modalTitle" class="text-white text-2xl font-bold mt-6 text-center drop-shadow-lg"></h3>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openModal(imageSrc: string, title: string) {
+        const modalImage = document.getElementById('modalImage') as HTMLImageElement;
+        const modalTitle = document.getElementById('modalTitle') as HTMLElement;
+        const imageModal = document.getElementById('imageModal') as HTMLElement;
+        
+        if (modalImage && modalTitle && imageModal) {
+          modalImage.src = imageSrc;
+          modalTitle.textContent = title;
+          imageModal.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      function closeModal() {
+        const imageModal = document.getElementById('imageModal') as HTMLElement;
+        if (imageModal) {
+          imageModal.classList.add('hidden');
+          document.body.style.overflow = 'auto';
+        }
+      }
+
+      // Cerrar modal al hacer clic fuera de la imagen
+      document.addEventListener('DOMContentLoaded', function() {
+        const imageModal = document.getElementById('imageModal');
+        if (imageModal) {
+          imageModal.addEventListener('click', function(e) {
+            if (e.target === this) {
+              closeModal();
+            }
+          });
+        }
+      });
+
+      // Cerrar modal con la tecla Escape
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeModal();
+        }
+      });
+    </script>
+
+  </main>
+</Layout>
