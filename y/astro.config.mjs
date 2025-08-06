@@ -7,3 +7,4 @@ export default defineConfig({
   // Si es para desarrollo local, comenta esta línea
   // base: '/nombre-de-tu-repositorio/',
 });
+ 
