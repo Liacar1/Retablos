@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 const year = new Date().getFullYear();
+const base = Astro.site ? new URL(Astro.site).pathname : '/';
 ---
 
 <!doctype html>
@@ -31,23 +32,24 @@ const year = new Date().getFullYear();
         
         <!-- Menú de navegación al lado derecho -->
         <div class="hidden md:flex items-center space-x-6">
-          <a href="/" class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
-            <span>🏠</span>
-            Inicio
-          </a>
-          <a href="/info" class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
-            <span>📝</span>
-            Inscripciones
-          </a>
-          <a href="/productos" class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
-            <span>🛍️</span>
-            Productos
-          </a>
-          <a href="/#contacto" class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
-            <span>📞</span>
-            Contactos
-          </a>
-        </div>
+      <a href={base} class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
+        <span>🏠</span>
+        Inicio
+      </a>
+      <a href={`${base}info`} class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
+        <span>📝</span>
+        Inscripciones
+      </a>
+      <a href={`${base}productos`} class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
+        <span>🛍️</span>
+        Productos
+      </a>
+      <a href={`${base}#contacto`} class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
+        <span>📞</span>
+        Contactos
+      </a>
+    </div>
+
         
         <!-- Botón hamburger para móvil -->
         <button @click="open = !open" class="md:hidden focus:outline-none bg-white/20 p-2 rounded-lg hover:bg-white/30 transition-colors">
@@ -58,27 +60,31 @@ const year = new Date().getFullYear();
         </button>
 
         <!-- Menú móvil -->
+        
+                
         <div 
           class="absolute top-full left-0 w-full bg-gradient-to-br from-orange-400/95 to-amber-500/95 px-6 py-4 flex-col gap-4 backdrop-blur-sm border-b border-orange-300/50"
           :class="{ 'flex': open, 'hidden': !open }"
         >
-          <a href="/" class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
+          <a href={base} class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
             <span>🏠</span>
             Inicio
           </a>
-          <a href="/info" class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
+          <a href={`${base}info`} class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
             <span>📝</span>
             Inscripciones
           </a>
-          <a href="/productos" class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
+          <a href={`${base}productos`} class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
             <span>🛍️</span>
             Productos
           </a>
-          <a href="/#contacto" class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
+          <a href={`${base}#contacto`} class="hover:text-orange-200 font-semibold transition duration-300 flex items-center gap-2 hover:bg-white/20 p-2 rounded-lg">
             <span>📞</span>
             Contactos
           </a>
         </div>
+
+
       </nav>
 
       <style>
