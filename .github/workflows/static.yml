@@ -2,7 +2,7 @@ name: Deploy Astro site to Pages
 
 on:
   push:
-    branches: ["master", "main", "github-pages2"]
+    branches: ["main", "master", "github-pages2"]
   workflow_dispatch:
 
 permissions:
@@ -33,26 +33,24 @@ jobs:
           pwd
           echo "Contenido del directorio actual:"
           ls -la
-          echo "Contenido de la carpeta liacar:"
-          ls -la liacar || echo "No existe liacar"
-          echo "Contenido de la carpeta liacar/y:"
-          ls -la liacar/y || echo "No existe liacar/y"
+          echo "Contenido de la carpeta y:"
+          ls -la y || echo "No existe y"
 
       - name: Install dependencies
-        run: npm install
-        working-directory: liacar/y
+        run: npm ci
+        working-directory: y
 
       - name: Build Astro project
         run: npm run build
-        working-directory: liacar/y
+        working-directory: y
 
       - name: Create .nojekyll file
-        run: touch liacar/y/dist/.nojekyll
+        run: touch y/dist/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'liacar/y/dist'
+          path: 'y/dist'
 
   deploy:
     environment:
