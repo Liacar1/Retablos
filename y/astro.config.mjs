@@ -1,10 +1,8 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
 export default defineConfig({
-  site: 'https://Liacar1.github.io',
-  base: '/y',
+  site: 'https://liacar1.github.io/Retablos',
+  base: '/Retablos/',
   outDir: './dist',
   build: {
     assets: 'assets'
