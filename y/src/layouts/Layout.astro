@@ -2,6 +2,7 @@
 import '../styles/global.css';
 const year = new Date().getFullYear();
 const base = Astro.site ? new URL(Astro.site).pathname : '/';
+const base1 = '/Retablos/';
 ---
 
 <!doctype html>
@@ -22,11 +23,11 @@ const base = Astro.site ? new URL(Astro.site).pathname : '/';
       <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center" x-data="{ open: false }">
         <!-- Logo y título a la izquierda -->
         <a href="/" class="text-xl md:text-2xl font-bold hover:text-orange-200 transition duration-300 flex items-center gap-3">
-          <img 
-            src="/cadimalogo.PNG" 
-            alt="Logo CADIMA Centro Artesanal Divino Maestro" 
-            class="w-32 h-16 object-contain drop-shadow-lg"
-          />
+        <img 
+          src={`${base1}cadimalogo.PNG`} 
+          alt="Logo CADIMA Centro Artesanal Divino Maestro" 
+          class="w-32 h-16 object-contain drop-shadow-lg"
+  />
           Taller de Retablos - Lía Carvajal
         </a>
         

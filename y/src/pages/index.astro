@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const year = new Date().getFullYear();
+const base1 = '/Retablos/';
 ---
 
 <Layout>
@@ -11,7 +12,7 @@ const year = new Date().getFullYear();
       <div class="max-w-4xl mx-auto text-center">
         <h2 class="text-4xl font-bold text-orange-700 mb-4 flex items-center justify-center gap-3">
           <img 
-        src="/cadimalogo.PNG" 
+         src={`${base1}cadimalogo.PNG`} 
         alt="Logo CADIMA Centro Artesanal Divino Maestro" 
         class="w-32 h-16 object-contain drop-shadow-lg"
       />
@@ -35,19 +36,19 @@ const year = new Date().getFullYear();
       </h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-4 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl1.jpeg" alt="Llavero 1" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl1.jpeg`} alt="Llavero 1" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-lg text-slate-800">Llavero Colonial 1</h4>
           </div>
         </div>
         <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-4 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl3.jpeg" alt="Llavero 2" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl3.jpeg`} alt="Llavero 2" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-lg text-slate-800">Llavero Colonial 2</h4>
           </div>
         </div>
         <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-4 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl11.jpeg" alt="Llavero 3" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl11.jpeg`} alt="Llavero 3" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-lg text-slate-800">Llavero Colonial 3</h4>
           </div>
@@ -68,19 +69,19 @@ const year = new Date().getFullYear();
       </h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-4 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl5.jpeg" alt="Casita 1" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl5.jpeg`} alt="Casita 1" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-lg text-slate-800">Casita Colonial 1</h4>
           </div>
         </div>
         <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-4 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl6.jpeg" alt="Casita 2" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl6.jpeg`} alt="Casita 2" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-lg text-slate-800">Casita Colonial 2</h4>
           </div>
         </div>
         <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-4 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl10.jpeg" alt="Casita 3" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl10.jpeg`}  alt="Casita 3" class="w-full h-64 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-lg text-slate-800">Casita Colonial 3</h4>
           </div>

@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 const year = new Date().getFullYear();
+const base1 = '/Retablos/';
 ---
 
 <Layout>
@@ -11,7 +12,7 @@ const year = new Date().getFullYear();
       <!-- Logo en la esquina superior derecha -->
       <div class="absolute top-0 right-0 z-10">
         <img 
-          src="/cadimalogo.PNG" 
+          src={`${base1}cadimalogo.PNG`} 
           alt="Logo CADIMA Centro Artesanal Divino Maestro" 
           class="w-32 h-16 object-contain drop-shadow-lg"
         />
@@ -36,7 +37,7 @@ const year = new Date().getFullYear();
         
         <!-- Casita Colonial 1 -->
         <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl1.jpeg" alt="Casita Colonial 1" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl1.jpeg`} alt="Casita Colonial 1" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Colonial 1</h4>
             <p class="text-slate-600 mb-3">Retablo colonial tradicional con detalles artesanales</p>
@@ -49,7 +50,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Colonial 2 -->
         <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl2.jpeg" alt="Casita Colonial 2" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl2.jpeg`} alt="Casita Colonial 2" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Colonial 2</h4>
             <p class="text-slate-600 mb-3">Retablo rústico con balcón y jardín</p>
@@ -62,7 +63,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Colonial 3 -->
         <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl5.jpeg" alt="Casita Colonial 3" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl5.jpeg`} alt="Casita Colonial 3" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Colonial 3</h4>
             <p class="text-slate-600 mb-3">Retablo de campo con techo de tejas</p>
@@ -75,7 +76,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Rústica 1 -->
         <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl6.jpeg" alt="Casita Rústica 1" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl6.jpeg`} alt="Casita Rústica 1" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Rústico 1</h4>
             <p class="text-slate-600 mb-3">Retablo de madera con chimenea</p>
@@ -88,7 +89,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Rústica 2 -->
         <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl7.jpeg" alt="Casita Rústica 2" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl7.jpeg`} alt="Casita Rústica 2" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Rústico 2</h4>
             <p class="text-slate-600 mb-3">Retablo de piedra con patio interior</p>
@@ -101,7 +102,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Rústica 3 -->
         <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl10.jpeg" alt="Casita Rústica 3" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl10.jpeg`} alt="Casita Rústica 3" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Retablo Rústico 3</h4>
             <p class="text-slate-600 mb-3">Retablo de campo con porche</p>
@@ -114,7 +115,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Colonial 4 -->
         <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retabl11.jpeg" alt="Casita Colonial 4" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retabl11.jpeg`} alt="Casita Colonial 4" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Colonial 4</h4>
             <p class="text-slate-600 mb-3">Casa señorial con balcones</p>
@@ -127,7 +128,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Colonial 5 -->
         <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retablo1.jpeg" alt="Casita Colonial 5" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retablo1.jpeg`} alt="Casita Colonial 5" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Colonial 5</h4>
             <p class="text-slate-600 mb-3">Casa de adobe con patio</p>
@@ -140,7 +141,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Colonial 6 -->
         <div class="group bg-gradient-to-br from-amber-50/90 to-yellow-50/90 p-6 rounded-3xl shadow-xl border-2 border-amber-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retablo2.jpeg" alt="Casita Colonial 6" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retablo2.jpeg`} alt="Casita Colonial 6" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Colonial 6</h4>
             <p class="text-slate-600 mb-3">Casa con galería y jardín</p>
@@ -153,7 +154,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Rústica 4 -->
         <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retablo3.jpeg" alt="Casita Rústica 4" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retablo3.jpeg`} alt="Casita Rústica 4" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Rústica 4</h4>
             <p class="text-slate-600 mb-3">Cabaña de troncos con terraza</p>
@@ -166,7 +167,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Rústica 5 -->
         <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retablo4.jpeg" alt="Casita Rústica 5" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retablo4.jpeg`} alt="Casita Rústica 5" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Rústica 5</h4>
             <p class="text-slate-600 mb-3">Casa de campo con mirador</p>
@@ -179,7 +180,7 @@ const year = new Date().getFullYear();
 
         <!-- Casita Rústica 6 -->
         <div class="group bg-gradient-to-br from-orange-50/90 to-amber-50/90 p-6 rounded-3xl shadow-xl border-2 border-orange-200/50 backdrop-blur-sm hover:transform hover:scale-105 transition-transform duration-300">
-          <img src="/retablo5.jpeg" alt="Casita Rústica 6" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
+          <img src={`${base1}retablo5.jpeg`} alt="Casita Rústica 6" class="w-full h-48 object-cover rounded-2xl shadow-lg mb-4" />
           <div class="text-center">
             <h4 class="font-bold text-xl text-slate-800 mb-2">Casita Rústica 6</h4>
             <p class="text-slate-600 mb-3">Casa de piedra con torre</p>
